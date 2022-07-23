@@ -1108,6 +1108,34 @@ ul.slides li {
 	background-position:200px 10px;
 	height: 100%;
 }
+
+
+/* Checking......................... */
+
+ /* #projectss{
+	display: flex; 
+	flex-direction:column; 
+	width:78% ;
+	margin:auto; 
+	border: 2px solid red;
+} 
+
+.projectssContainer{
+	display: flex; 
+	flex-direction:row;
+}
+
+.projectssContainer img{
+	width: 50%;
+}  */
+
+/* .projectssContainerWriten{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+} */
+
 /* ==========================================================================Responsive========================================================================== */
 /* 320px (iPhone) */
 @media screen and (max-width:414px) {
@@ -1124,6 +1152,18 @@ ul.slides li {
 	#blog{
 		display:none;
 	}
+	/* #projectss{
+		width:100% ;
+	} */
+
+	/* .projectssContainer{
+		
+		flex-direction:column;
+	} */
+
+	/* .projectssContainer img{
+		width:100%;
+	} */
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
@@ -1144,7 +1184,13 @@ ul.slides li {
 	#blog{
 		display:none;
 	}
+/* 
+	#projectss{
+		width:100% ;
+	} */
 }
+
+
 /* xGA iPad */
 @media screen and (max-width:1024px) {
 	.wp3 {
@@ -1181,6 +1227,9 @@ ul.slides li {
 	.wp2,.wp4,.wp5,.light-box {
 		margin-bottom:30px;
 	}
+	.hidden-img{
+		display: none;
+	}
 }
 @media screen and (max-width:50em) {
 	.icon-list a {
@@ -1190,6 +1239,9 @@ ul.slides li {
 	}
 	#blog{
 		display:none;
+	}
+	.hidden-img{
+		display: none;
 	}
 }
 

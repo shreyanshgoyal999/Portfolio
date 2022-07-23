@@ -4,6 +4,8 @@ const hbs = require("hbs")
 const path = require("path")
 const mongoose = require("mongoose")     // Used to connect Mongodb database with nodejs app.
 const { defaultCoreCipherList } = require("constants")
+const alert = require("alert")
+
 
 
 dotenv.config({path: "./config.env"})
@@ -62,9 +64,11 @@ app.post("/contact", async(req,res)=>{
         //Inserting Document in mongoDB database
         const doc = new MessageData(req.body);
         await doc.save();
-        res.render("messageSent.hbs");
+        alert("Message Sent !")
+        res.render("index.hbs")
     }
     catch(err){
+        alert("Error in Sending Message !")
         res.send(err);
     }
     
